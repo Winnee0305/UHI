@@ -1,3 +1,9 @@
+# Install module: 
+# pip install matplotlib seaborn numpy pandas xarray rioxarray geopandas rasterio pillow pyproj scikit-learn pystac-client planetary-computer tqdm
+
+# Run the code: (using anaconda)
+# /opt/anaconda3/bin/python "/Users/winnee/Study/EY Challenge/UHI/main.py"
+
 # Supress Warnings
 import warnings
 warnings.filterwarnings('ignore')
@@ -64,6 +70,8 @@ import pystac_client
 import planetary_computer 
 from odc.stac import stac_load
 
+import json
+
 # Global vairable for file names
 training_data_filename = "Training_data_uhi_index.csv"
 submission_filename = "Submission_template.csv"
@@ -121,9 +129,11 @@ print('This is the number of scenes that touch our region:',len(items))
 
 signed_items = [planetary_computer.sign(item).to_dict() for item in items]
 
+# signed_items = [planetary_computer.sign(item) for item in items]
+
+
 resolution = 10  # meters per pixel 
 scale = resolution / 111320.0 # degrees per pixel for crs=4326 
-
 
 data = stac_load(
     items,
