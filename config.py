@@ -56,3 +56,11 @@ time_window = "2021-06-01/2021-09-01"
 # Define the same dimension value for all GeoTIFF
 height = 1122
 width = 1281
+
+# # Define the variables to train the model
+# train_vars = sentinel2_bands + landsat_1_bands + landsat_2_bands + ['UHI INDEX']
+# for x in enumerate(train_vars):
+#     train_vars[x[0]] = x[0].upper()
+
+# training_variables = 
+# [['B01','B02','B03','B04','B05','B06','B07','B08','B8A','B11','B12','NIR08','RED','GREEN','BLUE','SWIR16','SWIR22','COASTAL','LWIR11','NDVI_S2','NDVI_LST','NDVI_S2_LST','NDWI_S2','NDBI_S2','MSI_LST','UHI Index']]
