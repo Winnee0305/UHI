@@ -18,7 +18,7 @@ submission_template = "submission_template.csv"
 ## Variables to extract from dataset
 
 # Sentinel 2 Bands
-sentinel2_bands = ['B01', 'B02', 'B03', 'B04', 'B05', 'B06', 'B07', 'B08', 'B8A', 'B09', 'B11', 'B12']
+sentinel2_bands = ['B01', 'B02', 'B03', 'B04', 'B05', 'B06', 'B07', 'B08', 'B8A', 'B11', 'B12']
 
 # Landsat 8 Bands
 landsat_1_bands = ["blue","green","red","nir08","swir16","swir22","coastal"]
