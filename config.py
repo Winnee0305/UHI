@@ -52,3 +52,7 @@ bounds = (lower_left[1], lower_left[0], upper_right[1], upper_right[0])
 
 # Define the time window
 time_window = "2021-06-01/2021-09-01"
+
+# Define the same dimension value for all GeoTIFF
+height = 1122
+width = 1281
